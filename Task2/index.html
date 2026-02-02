@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ticket Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Online Ticket Booking</h1>
+</header>
+
+<div class="container">
+  <form id="bookingForm">
+    <h2>Book Your Ticket</h2>
+
+    <label>Name</label>
+    <input type="text" id="name">
+
+    <label>Email</label>
+    <input type="email" id="email">
+
+    <label>From</label>
+    <input type="text" id="from">
+
+    <label>To</label>
+    <input type="text" id="to">
+
+    <label>Date</label>
+    <input type="date" id="date">
+
+    <label>Tickets</label>
+    <input type="number" id="tickets" min="1">
+
+    <button type="submit">Book Ticket</button>
+
+    <p id="error"></p>
+  </form>
+
+  <div class="result">
+    <h2>Booking Details</h2>
+    <p id="output"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
